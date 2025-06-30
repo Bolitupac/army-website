@@ -1,95 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-  background-color: #0c0c0c;
-  color: #e2e2e2;
-  line-height: 1.6;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #0c0c0c, #1b1b1b);
+  color: #eee;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #121212;
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem 2rem;
-  border-bottom: 2px solid #2f4f2f;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #4caf50;
+  color: #4CAF50;
 }
 
-.nav-links {
+nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-.nav-links a {
-  color: #e2e2e2;
+nav ul li a {
+  color: #eee;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #4caf50;
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
               url('https://images.unsplash.com/photo-1613141412888-1d40878ed2e2?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-  color: #fff;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 5rem 2rem;
+  flex-direction: column;
+  color: #fff;
 }
 
-.hero h1 {
+.hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  letter-spacing: 2px;
 }
 
-.hero p {
+.hero-text p {
   font-size: 1.2rem;
+  max-width: 700px;
   margin-bottom: 2rem;
 }
 
 .btn {
-  background-color: #4caf50;
-  color: #000;
+  background-color: #4CAF50;
+  color: black;
   padding: 0.8rem 1.5rem;
-  border: none;
-  text-decoration: none;
   font-weight: bold;
+  border: none;
   border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #367c39;
+  text-decoration: none;
 }
 
 .section {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   max-width: 900px;
-  margin: 0 auto;
-}
-
-.section h2 {
-  color: #4caf50;
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style: square;
-  padding-left: 1.5rem;
+  margin: auto;
 }
 
 form {
@@ -99,32 +78,32 @@ form {
 }
 
 input, textarea {
-  padding: 0.8rem;
+  padding: 1rem;
   border: none;
   border-radius: 5px;
-  background-color: #1c1c1c;
-  color: #fff;
+  background: #222;
+  color: white;
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #4CAF50;
+  color: black;
   padding: 0.8rem;
   border: none;
-  border-radius: 5px;
-  color: #000;
   font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #367c39;
+.success-msg {
+  color: #4CAF50;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
   background-color: #121212;
-  color: #777;
-  border-top: 1px solid #333;
+  padding: 1rem;
+  color: #999;
 }
